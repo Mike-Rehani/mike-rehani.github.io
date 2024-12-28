@@ -6,13 +6,13 @@ function PokemonNav(){
             <Nav.Item>
                 <Nav.Link 
                 className="navbar-brand"
-                href="/home">Home</Nav.Link>
+                href="#/home">Home</Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
                 <Nav.Link 
                 className="navbar-brand"
-                href="/sets">Sets</Nav.Link>
+                href="#/sets">Sets</Nav.Link>
             </Nav.Item>
             
         </Navbar>

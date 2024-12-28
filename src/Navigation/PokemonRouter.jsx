@@ -1,20 +1,20 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import React from 'react'
-import PokemonSets from "../../src/Pages/PokemonSets.jsx"
-import PokemonIndividualSet from "../../src/Pages/PokemonIndividualSet.jsx"
-import Homepage from "../../src/Pages/Homepage.jsx"
+import { HashRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
+import PokemonSets from "../../src/Pages/PokemonSets.jsx";
+import PokemonIndividualSet from "../../src/Pages/PokemonIndividualSet.jsx";
+import Homepage from "../../src/Pages/Homepage.jsx";
 import PokemonIndividualCard from "../Pages/PokemonIndividualCard.jsx";
 
-export default function PokemonRouter(){
+export default function PokemonRouter() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
-                <Route path="/" element={<Homepage></Homepage>}></Route>
-                <Route path="/Sets" element={<PokemonSets></PokemonSets>}></Route>
-                <Route path="/Sets/*" element={<PokemonIndividualSet></PokemonIndividualSet>}></Route>
-                <Route path="/Cards/*" element={<PokemonIndividualCard></PokemonIndividualCard>}></Route>
-                <Route path="*" element={<Homepage></Homepage>}></Route>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/sets" element={<PokemonSets />} />
+                <Route path="/sets/*" element={<PokemonIndividualSet />} />
+                <Route path="/cards/*" element={<PokemonIndividualCard />} />
+                <Route path="*" element={<Homepage />} />
             </Routes>
-        </BrowserRouter>
-    )
+        </HashRouter>
+    );
 }

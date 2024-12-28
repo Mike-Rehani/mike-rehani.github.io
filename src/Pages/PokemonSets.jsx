@@ -17,11 +17,12 @@ export default function PokemonSets(){
     }
 
     const getSetElements = ()=>{
+        
         return (
             pokemonCardSets?.map(cardSet=>{
                 return( 
                     <Col sm={12} md={6} lg={4} xl={3} key={cardSet.id} >
-                        <Link to={`/Sets/${cardSet.id}`}>
+                        <Link to={`${cardSet.id}`}>
                             <Card>
                                 <Card.Body style={{"textAlign":"Center", "fontSize":25}}>{cardSet.name}</Card.Body>
                                 <Card.Body style={{"textAlign":"Center", "fontSize":20}}>{cardSet.series} series<br/>{cardSet.total} cards total</Card.Body>

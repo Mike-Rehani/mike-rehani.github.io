@@ -33,7 +33,7 @@ export default function PokemonIndividualSet(){``
                 return( 
                     <Col sm={12} md={8} lg={6} xl={4} key={pokemonCard.id} >
                             <Card>
-                            <Link to={`/Cards/${pokemonCard.id}`} params={{"pokemonCard":pokemonCard}}>
+                            <Link to={`/cards/${pokemonCard.id}`} params={{"pokemonCard":pokemonCard}}>
                                 
                                 <Card.Body style={{"textAlign":"Center", "color":"black", "fontSize":25}}>
                                     {pokemonCard.name}
