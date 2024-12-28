@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react'
 import PokemonSets from "../../src/Pages/PokemonSets.jsx"
 import PokemonIndividualSet from "../../src/Pages/PokemonIndividualSet.jsx"
 import Homepage from "../../src/Pages/Homepage.jsx"

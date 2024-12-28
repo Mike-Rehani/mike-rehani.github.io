@@ -1,5 +1,5 @@
 import { Nav, Navbar } from "react-bootstrap";
-
+import React from 'react'
 function PokemonNav(){
     return (
         <Navbar bg="dark" variant="dark" sticky="top" expand="sm" collapseOnSelect>

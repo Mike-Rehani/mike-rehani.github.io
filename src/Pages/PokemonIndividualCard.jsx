@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState,React } from 'react';
 import { Card,ButtonGroup,Button,Container,Row,Col } from 'react-bootstrap';
 import PokemonNav from '../Navigation/PokemonNav';
 import loadingGif from '../assets/loading.gif'; // Import the image from the assets folder

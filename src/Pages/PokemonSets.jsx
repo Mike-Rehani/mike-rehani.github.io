@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,React } from "react";
 import PokemonNav from "../../src/Navigation/PokemonNav.jsx";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";

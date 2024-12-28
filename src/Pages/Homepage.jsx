@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React from 'react';
 import PokemonNav from "../../src/Navigation/PokemonNav.jsx";
 
 
