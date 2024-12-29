@@ -14,6 +14,12 @@ function PokemonNav(){
                 className="navbar-brand"
                 href="#/sets">Sets</Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+                <Nav.Link 
+                className="navbar-brand"
+                href="#/pokemon">Pokemon</Nav.Link>
+            </Nav.Item>
             
         </Navbar>
     )

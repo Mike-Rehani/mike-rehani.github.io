@@ -1,9 +1,9 @@
 import { useEffect, useState,React } from "react";
-import PokemonNav from "../../src/Navigation/PokemonNav.jsx";
+import PokemonNav from "../Navigation/PokemonNav.jsx";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function PokemonSets(){
+export default function AvailableSets(){
     let [pokemonCardSets, setPokemonCardSets] = useState() 
     useEffect(() => {
         getSets()
