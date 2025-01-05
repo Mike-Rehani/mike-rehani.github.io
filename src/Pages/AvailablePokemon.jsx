@@ -85,7 +85,12 @@ export default function AvailablePokemon(props){
     }
 
     const filterPokemonCards = (searchInput)=>{
-        setFilteredPokemon(availablePokemon.filter((pokemon)=>{return pokemon.name.includes(searchInput)}))
+        setFilteredPokemon(availablePokemon.filter((pokemon)=>{
+            let lowerCaseName = pokemon.name.toLowerCase()
+            let lowerCaseSearchInput = searchInput.toLowerCase()
+     
+            return lowerCaseName.includes(lowerCaseSearchInput)
+        }))
     }
 
     return  (

@@ -160,7 +160,7 @@ export default function PokemonIndividualCard(props){
                     />
                     </Container>
                 :
-                <Container fluid style={{ width: '75%' }}>
+                <Container fluid style={{ display: 'flex',justifyContent: 'center', minWidth: '50%' }}>
                     <Row className="d-flex g-4">
                         {
                             pokemonCard === null ? 
