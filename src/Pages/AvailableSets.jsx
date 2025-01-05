@@ -21,7 +21,7 @@ export default function AvailableSets(){
         return (
             pokemonCardSets?.map(cardSet=>{
                 return( 
-                    <Col sm={12} md={6} lg={4} xl={3} key={cardSet.id} style={{"padding-top":"15px"}}>
+                    <Col sm={12} md={6} lg={4} xl={3} key={cardSet.id} style={{"paddingTop":"15px"}}>
                         <Link to={`${cardSet.id}`}>
                             <Card style={{"backgroundColor":"#d3d3d3"}}>
                                 <Card.Body style={{"textAlign":"Center", "fontSize":25}}>{cardSet.name}</Card.Body>

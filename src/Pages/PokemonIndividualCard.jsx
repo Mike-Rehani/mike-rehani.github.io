@@ -34,7 +34,6 @@ export default function PokemonIndividualCard(props){
         cardInfo = await cardInfo.json()
         setPokemonCard(cardInfo["data"])
         setPrices(cardInfo["data"].tcgplayer.prices)
-        console.log(cardInfo["data"])
     }
 
     const getPokemonCardImage = (pokemonCard)=>{
