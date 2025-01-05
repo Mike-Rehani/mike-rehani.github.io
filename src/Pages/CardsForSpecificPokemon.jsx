@@ -47,7 +47,7 @@ export default function CardForSpecificPokemon(){``
                     />
                 </Container>
             : 
-            <Container fluid style={{ width: '100%' }}>
+            <Container fluid style={{ width: '100%',"padding":"50px" }}>
                 <Row className="d-flex g-4">
                 {pokemonCards?.map((pokemonCard) => {
                      return <PokemonPreviewCard pokemonCard={pokemonCard} key={pokemonCard.id} />;

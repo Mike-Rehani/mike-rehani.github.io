@@ -34,7 +34,7 @@ export default function CardsForSpecificSet(){``
             <PokemonNav></PokemonNav>
             {
             pokemonCards === null ? 
-                <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>                  
+                <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>                  
                     <img 
                     src={loadingGif}
                     width='25%' 
@@ -43,7 +43,7 @@ export default function CardsForSpecificSet(){``
                     />
                 </Container>
             : 
-            <Container fluid style={{ width: '100%' }}>
+            <Container fluid style={{ width: '100%', "padding":"50px"}}>
                 <Row className="d-flex g-4">
                 {pokemonCards?.map((pokemonCard) => {
                      return <PokemonPreviewCard pokemonCard={pokemonCard} key={pokemonCard.id} />;

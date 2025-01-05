@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function PokemonPreviewCard(props){
     return (
         <Col sm={12} md={8} lg={6} xl={4} >
-            <Card>
+            <Card style={{"backgroundColor":"#d3d3d3"}}>
             <Link to={`/cards/${props.pokemonCard.id}`} params={{"pokemonCard":props.pokemonCard}}>
                 
                 <Card.Body style={{"textAlign":"Center", "color":"black", "fontSize":25}}>

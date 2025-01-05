@@ -39,11 +39,11 @@ export default function PokemonIndividualCard(props){
 
     const getPokemonCardImage = (pokemonCard)=>{
         return (
-        <Col>
+        <Col className="d-flex justify-content-center align-items-center">
             <img
                 src={pokemonCard.images.large}
                 alt="example"
-                style={{ width: '500px', height: 'auto', objectFit: 'cover' }}
+                style={{ width: '300px', height: 'auto', objectFit: 'cover'}}
             />
         </Col>)
     }
@@ -89,7 +89,7 @@ export default function PokemonIndividualCard(props){
 
     const getQuantityButtons = (pokemonCardType)=>{
         return (
-            <Col sm={12} md={8} lg={6} xl={4} key={pokemonCardType}>
+            <Col sm={12} md={8} lg={6} xl={6} key={pokemonCardType}>
                 <Card.Text style={{"fontSize":20}}>{pokemonCardType}</Card.Text>
                 <ButtonGroup style={{width:"100%"}}>
 
@@ -129,7 +129,7 @@ export default function PokemonIndividualCard(props){
     
     const getPokemonCardElement = ()=>{
         return (
-            <Card style={{width: '100%', flexDirection: 'row' }}>
+            <Card style={{width: '100%', flexDirection: 'row',"backgroundColor":"#d3d3d3" }}>
                 <Row className="g-0">
                     {getPokemonCardImage(pokemonCard)}
                     <Col>
