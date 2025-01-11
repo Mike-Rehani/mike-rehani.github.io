@@ -16,7 +16,22 @@ export default function AvailablePokemon(props){
 
     useEffect(() => {
         getListOfPokemon()
+        test()
     },[])
+
+    const test = async()=>{
+        
+        let data = await fetch('https://mike191919.pythonanywhere.com/test',{
+            "Headers":{
+                "Access-Control-Allow-Origin": "*",
+                "Content-Type":"application/json"
+            }
+            
+        })
+        console.log("HERE")
+        data = await data.json()
+        console.log(data)
+    }
 
     const getListOfPokemon = async ()=>{
         let data = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100000',{
